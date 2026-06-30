@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apps | Taka Medical Apps</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+      background: #f5f5f7;
+
+      color: #1d1d1f;
+
+    }
+
+    header {
+
+      background: rgba(255,255,255,0.9);
+
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid #ddd;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+    nav {
+
+      max-width: 980px;
+
+      margin: 0 auto;
+
+      padding: 14px 20px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+    nav a {
+
+      color: #1d1d1f;
+
+      text-decoration: none;
+
+      margin-left: 18px;
+
+      font-size: 14px;
+
+    }
+
+    .brand {
+
+      font-weight: 700;
+
+      color: #0066cc;
+
+    }
+
+    main {
+
+      max-width: 980px;
+
+      margin: 0 auto;
+
+      padding: 56px 20px;
+
+    }
+
+    h1 {
+
+      font-size: 42px;
+
+      margin-bottom: 12px;
+
+    }
+
+    .lead {
+
+      font-size: 18px;
+
+      color: #6e6e73;
+
+      margin-bottom: 36px;
+
+    }
+
+    .app-list {
+
+      background: #fff;
+
+      border-radius: 24px;
+
+      overflow: hidden;
+
+      box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+
+    }
+
+    .app {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 18px;
+
+      padding: 22px;
+
+      border-bottom: 1px solid #e5e5e5;
+
+    }
+
+    .app:last-child {
+
+      border-bottom: none;
+
+    }
+
+    .icon {
+
+      width: 64px;
+
+      height: 64px;
+
+      border-radius: 16px;
+
+      background: linear-gradient(135deg, #007aff, #34c759);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      color: white;
+
+      font-weight: 700;
+
+      font-size: 22px;
+
+      flex-shrink: 0;
+
+    }
+
+    .app h2 {
+
+      margin: 0 0 6px;
+
+      font-size: 20px;
+
+    }
+
+    .app p {
+
+      margin: 0;
+
+      color: #6e6e73;
+
+      line-height: 1.6;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      color: #86868b;
+
+      font-size: 13px;
+
+      padding: 40px 20px;
+
+    }
+
+    @media (max-width: 640px) {
+
+      nav {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+      }
+
+      nav a {
+
+        margin-left: 10px;
+
+      }
+
+      h1 {
+
+        font-size: 34px;
+
+      }
+
+      .app {
+
+        align-items: flex-start;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <nav>
+
+    <a class="brand" href="index.html">Taka Medical Apps</a>
+
+    <div>
+
+      <a href="apps.html">Apps</a>
+
+      <a href="support.html">Support</a>
+
+      <a href="privacy.html">Privacy</a>
+
+      <a href="terms.html">Terms</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <h1>Apps</h1>
+
+  <p class="lead">Taka Medical Apps が提供する、臨床現場を支援するiPhone・iPad向け医療アプリです。</p>
+
+  <section class="app-list">
+
+    <div class="app">
+
+      <div class="icon">UC</div>
+
+      <div>
+
+        <h2>Unified Clinical OS</h2>
+
+        <p>感染管理、臨床推論、抗菌薬、疾患プロトコールを統合した臨床支援アプリです。</p>
+
+      </div>
+
+    </div>
+
+    <div class="app">
+
+      <div class="icon">AN</div>
+
+      <div>
+
+        <h2>AssessmentNavi</h2>
+
+        <p>フィジカルアセスメント、スコア評価、臨床観察を支援するアプリです。</p>
+
+      </div>
+
+    </div>
+
+    <div class="app">
+
+      <div class="icon">AB</div>
+
+      <div>
+
+        <h2>AntibioticsOS</h2>
+
+        <p>抗菌薬、細菌、耐性機序、感染症診療の確認を支援するアプリです。</p>
+
+      </div>
+
+    </div>
+
+    <div class="app">
+
+      <div class="icon">DP</div>
+
+      <div>
+
+        <h2>Disease Protocol OS</h2>
+
+        <p>疾患別の観察項目、初期対応、臨床判断を整理するプロトコール支援アプリです。</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  © 2026 Taka Medical Apps. All rights reserved.
+
+</footer>
+
+</body>
+
+</html>
