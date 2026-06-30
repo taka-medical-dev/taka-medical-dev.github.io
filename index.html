@@ -6,15 +6,217 @@
 
 <meta charset="UTF-8">
 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Taka Medical Apps</title>
+
+<style>
+
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.7}
+
+header{background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:10}
+
+nav{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+
+nav a{text-decoration:none;color:#1d1d1f;margin-left:18px;font-size:14px}
+
+.brand{font-weight:700;color:#0066cc}
+
+.hero{max-width:1000px;margin:auto;padding:90px 25px 60px;text-align:center}
+
+.hero h1{font-size:56px;line-height:1.1;margin:0 0 20px}
+
+.hero p{font-size:22px;color:#6e6e73;margin:0 auto;max-width:720px}
+
+.buttons{margin-top:34px}
+
+.button{display:inline-block;background:#0071e3;color:white;text-decoration:none;padding:12px 22px;border-radius:999px;margin:6px;font-weight:600}
+
+.button.secondary{background:white;color:#0071e3;border:1px solid #d2d2d7}
+
+.section{max-width:1000px;margin:auto;padding:40px 25px}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+
+.card{background:white;border-radius:24px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+
+.card h2{margin-top:0}
+
+.card p{color:#6e6e73}
+
+.icon{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,#007aff,#34c759);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;margin-bottom:18px}
+
+.notice{background:#fff;border-radius:24px;padding:34px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+
+footer{text-align:center;color:#86868b;font-size:13px;padding:50px 20px}
+
+@media(max-width:700px){
+
+nav{flex-direction:column;gap:10px}
+
+nav a{margin-left:10px}
+
+.hero h1{font-size:42px}
+
+.hero p{font-size:18px}
+
+.grid{grid-template-columns:1fr}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<h1>Taka Medical Apps</h1>
+<header>
 
-<p>Developer Website</p>
+<nav>
+
+<a class="brand" href="index.html">Taka Medical Apps</a>
+
+<div>
+
+<a href="apps.html">Apps</a>
+
+<a href="support.html">Support</a>
+
+<a href="privacy.html">Privacy</a>
+
+<a href="terms.html">Terms</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>臨床現場を支援する<br>医療アプリを。</h1>
+
+<p>
+
+Taka Medical Appsは、感染管理、臨床推論、抗菌薬、疾患プロトコールなど、
+
+医療者の判断と学習を支援するiPhone・iPad向けアプリを開発しています。
+
+</p>
+
+<div class="buttons">
+
+<a class="button" href="apps.html">アプリを見る</a>
+
+<a class="button secondary" href="support.html">サポート</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">UC</div>
+
+<h2>Unified Clinical OS</h2>
+
+<p>感染管理、臨床推論、抗菌薬、疾患情報を統合した臨床支援アプリです。</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">AN</div>
+
+<h2>AssessmentNavi</h2>
+
+<p>フィジカルアセスメント、スコア評価、観察項目の整理を支援します。</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">AB</div>
+
+<h2>AntibioticsOS</h2>
+
+<p>抗菌薬、細菌、耐性機序、感染症診療の確認を支援します。</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">DP</div>
+
+<h2>Disease Protocol OS</h2>
+
+<p>疾患別の観察、初期対応、臨床判断を整理するプロトコール支援アプリです。</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="notice">
+
+<h2>医療上の注意</h2>
+
+<p>
+
+本サイトおよび関連アプリは、医療者の学習・情報整理・判断支援を目的としたものです。
+
+診断、治療、処方、医療行為の最終判断を代替するものではありません。
+
+実際の医療判断は、最新のガイドライン、添付文書、所属施設の規定、患者状態に基づいて行ってください。
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Support</h2>
+
+<p>不具合報告、改善要望、アプリに関するお問い合わせはこちら。</p>
+
+<a href="support.html">サポートページへ</a>
+
+</div>
+
+<div class="card">
+
+<h2>Privacy Policy</h2>
+
+<p>個人情報やアプリ内データの取り扱いについて確認できます。</p>
+
+<a href="privacy.html">プライバシーポリシーへ</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Taka Medical Apps. All rights reserved.
+
+</footer>
 
 </body>
 
