@@ -12,55 +12,91 @@
 
 <style>
 
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.7}
+*{box-sizing:border-box}
 
-header{background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:10}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.7}
 
-nav{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.08)}
 
-nav a{text-decoration:none;color:#1d1d1f;margin-left:18px;font-size:14px}
+nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
 
-.brand{font-weight:700;color:#0066cc}
+.brand{font-weight:800;color:#0071e3;text-decoration:none}
 
-.hero{max-width:1000px;margin:auto;padding:90px 25px 60px;text-align:center}
+nav a{color:#1d1d1f;text-decoration:none;margin-left:18px;font-size:14px}
 
-.hero h1{font-size:56px;line-height:1.1;margin:0 0 20px}
+.hero{max-width:1120px;margin:auto;padding:96px 24px 70px;text-align:center}
 
-.hero p{font-size:22px;color:#6e6e73;margin:0 auto;max-width:720px}
+.badge{display:inline-block;background:#e8f2ff;color:#0066cc;padding:7px 14px;border-radius:999px;font-size:14px;font-weight:700;margin-bottom:24px}
 
-.buttons{margin-top:34px}
+h1{font-size:64px;line-height:1.05;margin:0 0 22px;letter-spacing:-.04em}
 
-.button{display:inline-block;background:#0071e3;color:white;text-decoration:none;padding:12px 22px;border-radius:999px;margin:6px;font-weight:600}
+.lead{font-size:23px;color:#6e6e73;max-width:780px;margin:0 auto}
 
-.button.secondary{background:white;color:#0071e3;border:1px solid #d2d2d7}
+.actions{margin-top:36px}
 
-.section{max-width:1000px;margin:auto;padding:40px 25px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:#0071e3;color:white;text-decoration:none;font-weight:700;margin:6px}
 
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.btn.sub{background:white;color:#0071e3;border:1px solid #d2d2d7}
 
-.card{background:white;border-radius:24px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+.mock{margin:58px auto 0;max-width:900px;display:grid;grid-template-columns:1fr 1.5fr;gap:24px;align-items:end}
 
-.card h2{margin-top:0}
+.phone,.ipad{background:#111;border-radius:38px;padding:12px;box-shadow:0 24px 70px rgba(0,0,0,.18)}
 
-.card p{color:#6e6e73}
+.phone{min-height:430px}
 
-.icon{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,#007aff,#34c759);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;margin-bottom:18px}
+.ipad{min-height:360px;border-radius:34px}
 
-.notice{background:#fff;border-radius:24px;padding:34px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+.screen{height:100%;min-height:330px;border-radius:28px;background:linear-gradient(145deg,#0b1220,#143d59);color:white;padding:26px;text-align:left;display:flex;flex-direction:column;justify-content:space-between}
+
+.screen h2{font-size:30px;margin:0}
+
+.screen p{color:#c7d2fe}
+
+.section{max-width:1120px;margin:auto;padding:58px 24px}
+
+.section h2{font-size:38px;letter-spacing:-.03em;margin:0 0 16px}
+
+.section-lead{font-size:19px;color:#6e6e73;max-width:760px}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:30px}
+
+.card{background:white;border-radius:28px;padding:32px;box-shadow:0 12px 36px rgba(0,0,0,.06)}
+
+.app-icon{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,#007aff,#34c759);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px;margin-bottom:18px}
+
+.card h3{font-size:24px;margin:0 0 8px}
+
+.card p{color:#6e6e73;margin:0 0 18px}
+
+.card a{color:#0071e3;text-decoration:none;font-weight:700}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+
+.feature{background:white;border-radius:22px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+
+.feature strong{display:block;font-size:18px;margin-bottom:8px}
+
+.feature span{color:#6e6e73;font-size:15px}
+
+.notice{background:#fff;border-radius:28px;padding:34px;box-shadow:0 12px 36px rgba(0,0,0,.06)}
 
 footer{text-align:center;color:#86868b;font-size:13px;padding:50px 20px}
 
-@media(max-width:700px){
+@media(max-width:760px){
 
-nav{flex-direction:column;gap:10px}
+nav{flex-direction:column;gap:8px}
 
 nav a{margin-left:10px}
 
-.hero h1{font-size:42px}
+h1{font-size:43px}
 
-.hero p{font-size:18px}
+.lead{font-size:18px}
 
-.grid{grid-template-columns:1fr}
+.mock{grid-template-columns:1fr}
+
+.grid,.features{grid-template-columns:1fr}
+
+.phone,.ipad{min-height:300px}
 
 }
 
@@ -96,21 +132,61 @@ nav a{margin-left:10px}
 
 <section class="hero">
 
-<h1>臨床現場を支援する<br>医療アプリを。</h1>
+<div class="badge">Clinical iOS Apps</div>
 
-<p>
+<h1>Clinical Intelligence<br>for Healthcare.</h1>
 
-Taka Medical Appsは、感染管理、臨床推論、抗菌薬、疾患プロトコールなど、
+<p class="lead">
 
-医療者の判断と学習を支援するiPhone・iPad向けアプリを開発しています。
+医療従事者の思考を支援するために。感染管理、臨床推論、抗菌薬、疾患プロトコールを、iPhone・iPadで使いやすく。
 
 </p>
 
-<div class="buttons">
+<div class="actions">
 
-<a class="button" href="apps.html">アプリを見る</a>
+<a class="btn" href="apps.html">アプリを見る</a>
 
-<a class="button secondary" href="support.html">サポート</a>
+<a class="btn sub" href="support.html">サポートへ</a>
+
+</div>
+
+<div class="mock">
+
+<div class="phone">
+
+<div class="screen">
+
+<div>
+
+<h2>Unified<br>Clinical OS</h2>
+
+<p>Infection Control / Assessment / Protocol</p>
+
+</div>
+
+<strong>iPhone optimized</strong>
+
+</div>
+
+</div>
+
+<div class="ipad">
+
+<div class="screen">
+
+<div>
+
+<h2>Designed for Clinical Practice.</h2>
+
+<p>臨床現場で必要な情報へ、すばやく、迷わずアクセス。</p>
+
+</div>
+
+<strong>iPad ready</strong>
+
+</div>
+
+</div>
 
 </div>
 
@@ -118,47 +194,93 @@ Taka Medical Appsは、感染管理、臨床推論、抗菌薬、疾患プロト
 
 <section class="section">
 
+<h2>Designed by a Clinical Nurse.</h2>
+
+<p class="section-lead">
+
+Taka Medical Appsは、医療従事者の学習・情報整理・臨床判断支援を目的として設計されたアプリ群です。
+
+現場で使いやすい構造、読みやすい情報、継続的な改善を重視しています。
+
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Our Apps</h2>
+
 <div class="grid">
 
 <div class="card">
 
-<div class="icon">UC</div>
+<div class="app-icon">UC</div>
 
-<h2>Unified Clinical OS</h2>
+<h3>Unified Clinical OS</h3>
 
-<p>感染管理、臨床推論、抗菌薬、疾患情報を統合した臨床支援アプリです。</p>
+<p>感染管理、臨床推論、抗菌薬、疾患情報を統合した臨床支援アプリ。</p>
 
-</div>
-
-<div class="card">
-
-<div class="icon">AN</div>
-
-<h2>AssessmentNavi</h2>
-
-<p>フィジカルアセスメント、スコア評価、観察項目の整理を支援します。</p>
+<a href="apps.html">詳しく見る</a>
 
 </div>
 
 <div class="card">
 
-<div class="icon">AB</div>
+<div class="app-icon">AN</div>
 
-<h2>AntibioticsOS</h2>
+<h3>AssessmentNavi</h3>
 
-<p>抗菌薬、細菌、耐性機序、感染症診療の確認を支援します。</p>
+<p>ABCDE、OPQRST、スコア評価、観察項目の整理を支援。</p>
+
+<a href="apps.html">詳しく見る</a>
 
 </div>
 
 <div class="card">
 
-<div class="icon">DP</div>
+<div class="app-icon">AB</div>
 
-<h2>Disease Protocol OS</h2>
+<h3>AntibioticsOS</h3>
 
-<p>疾患別の観察、初期対応、臨床判断を整理するプロトコール支援アプリです。</p>
+<p>抗菌薬、細菌、耐性機序、感染症診療の確認を支援。</p>
+
+<a href="apps.html">詳しく見る</a>
 
 </div>
+
+<div class="card">
+
+<div class="app-icon">DP</div>
+
+<h3>Disease Protocol OS</h3>
+
+<p>疾患別の観察、初期対応、臨床判断を整理するプロトコール支援アプリ。</p>
+
+<a href="apps.html">詳しく見る</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Why Taka Medical Apps?</h2>
+
+<div class="features">
+
+<div class="feature"><strong>Offline First</strong><span>端末内で情報を確認しやすい構成。</span></div>
+
+<div class="feature"><strong>Clinical Design</strong><span>医療者の思考の流れに合わせた設計。</span></div>
+
+<div class="feature"><strong>iPhone / iPad</strong><span>モバイルでもタブレットでも使いやすく。</span></div>
+
+<div class="feature"><strong>Structured Content</strong><span>疾患、細菌、薬剤、スコアを整理。</span></div>
+
+<div class="feature"><strong>Continuous Updates</strong><span>内容とUIを継続的に改善。</span></div>
+
+<div class="feature"><strong>Privacy Conscious</strong><span>個人情報を取得しない設計を重視。</span></div>
 
 </div>
 
@@ -168,45 +290,17 @@ Taka Medical Appsは、感染管理、臨床推論、抗菌薬、疾患プロト
 
 <div class="notice">
 
-<h2>医療上の注意</h2>
+<h2>Medical Disclaimer</h2>
 
 <p>
 
-本サイトおよび関連アプリは、医療者の学習・情報整理・判断支援を目的としたものです。
+本サイトおよび関連アプリは、医療従事者の学習・情報整理・判断支援を目的としたものです。
 
 診断、治療、処方、医療行為の最終判断を代替するものではありません。
 
 実際の医療判断は、最新のガイドライン、添付文書、所属施設の規定、患者状態に基づいて行ってください。
 
 </p>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="grid">
-
-<div class="card">
-
-<h2>Support</h2>
-
-<p>不具合報告、改善要望、アプリに関するお問い合わせはこちら。</p>
-
-<a href="support.html">サポートページへ</a>
-
-</div>
-
-<div class="card">
-
-<h2>Privacy Policy</h2>
-
-<p>個人情報やアプリ内データの取り扱いについて確認できます。</p>
-
-<a href="privacy.html">プライバシーポリシーへ</a>
-
-</div>
 
 </div>
 
