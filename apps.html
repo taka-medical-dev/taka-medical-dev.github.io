@@ -14,63 +14,327 @@
 
 *{box-sizing:border-box}
 
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.75}
+body{
 
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.08)}
+  margin:0;
 
-nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Sans",Arial,sans-serif;
 
-.brand{font-weight:800;color:#0071e3;text-decoration:none}
+  background:#f5f5f7;
 
-nav a{color:#1d1d1f;text-decoration:none;margin-left:18px;font-size:14px}
+  color:#1d1d1f;
 
-.hero{max-width:1120px;margin:auto;padding:82px 24px 40px}
+  line-height:1.75;
 
-.badge{display:inline-block;background:#e8f2ff;color:#0066cc;padding:7px 14px;border-radius:999px;font-size:14px;font-weight:700;margin-bottom:22px}
+}
 
-h1{font-size:58px;line-height:1.08;margin:0 0 18px;letter-spacing:-.04em}
+header{
 
-.lead{font-size:21px;color:#6e6e73;max-width:760px;margin:0}
+  position:sticky;
 
-.section{max-width:1120px;margin:auto;padding:34px 24px}
+  top:0;
 
-.app-card{background:white;border-radius:30px;padding:34px;margin-bottom:26px;box-shadow:0 14px 42px rgba(0,0,0,.06);display:grid;grid-template-columns:110px 1fr;gap:26px}
+  z-index:20;
 
-.app-icon{width:86px;height:86px;border-radius:24px;background:linear-gradient(135deg,#007aff,#34c759);display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-size:26px}
+  background:rgba(255,255,255,.86);
 
-.app-card h2{font-size:30px;margin:0 0 8px;letter-spacing:-.02em}
+  backdrop-filter:blur(18px);
 
-.app-card p{color:#6e6e73;margin:0 0 18px}
+  border-bottom:1px solid rgba(0,0,0,.08);
 
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+}
 
-.tag{background:#f5f5f7;border:1px solid #e5e5ea;border-radius:999px;padding:6px 12px;font-size:13px;color:#3a3a3c}
+nav{
 
-.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  max-width:1120px;
 
-.meta div{background:#f5f5f7;border-radius:16px;padding:14px}
+  margin:auto;
 
-.meta strong{display:block;font-size:13px;color:#6e6e73}
+  padding:14px 22px;
 
-.meta span{font-weight:700}
+  display:flex;
 
-.notice{background:#fff;border-radius:28px;padding:34px;box-shadow:0 12px 36px rgba(0,0,0,.06)}
+  justify-content:space-between;
 
-footer{text-align:center;color:#86868b;font-size:13px;padding:50px 20px}
+  align-items:center;
+
+}
+
+.brand{
+
+  font-weight:800;
+
+  color:#0071e3;
+
+  text-decoration:none;
+
+}
+
+nav a{
+
+  color:#1d1d1f;
+
+  text-decoration:none;
+
+  margin-left:18px;
+
+  font-size:14px;
+
+}
+
+.hero{
+
+  max-width:1120px;
+
+  margin:auto;
+
+  padding:82px 24px 40px;
+
+}
+
+.badge{
+
+  display:inline-block;
+
+  background:#e8f2ff;
+
+  color:#0066cc;
+
+  padding:7px 14px;
+
+  border-radius:999px;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  margin-bottom:22px;
+
+}
+
+h1{
+
+  font-size:58px;
+
+  line-height:1.08;
+
+  margin:0 0 18px;
+
+  letter-spacing:-.04em;
+
+}
+
+.lead{
+
+  font-size:21px;
+
+  color:#6e6e73;
+
+  max-width:780px;
+
+  margin:0;
+
+}
+
+.section{
+
+  max-width:1120px;
+
+  margin:auto;
+
+  padding:34px 24px;
+
+}
+
+.app-card{
+
+  background:white;
+
+  border-radius:30px;
+
+  padding:34px;
+
+  margin-bottom:26px;
+
+  box-shadow:0 14px 42px rgba(0,0,0,.06);
+
+  display:grid;
+
+  grid-template-columns:110px 1fr;
+
+  gap:26px;
+
+}
+
+.app-icon-img{
+
+  width:86px;
+
+  height:86px;
+
+  border-radius:24px;
+
+  object-fit:cover;
+
+  box-shadow:0 10px 28px rgba(0,0,0,.14);
+
+}
+
+.app-icon-text{
+
+  width:86px;
+
+  height:86px;
+
+  border-radius:24px;
+
+  background:linear-gradient(135deg,#007aff,#34c759);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  color:white;
+
+  font-weight:900;
+
+  font-size:26px;
+
+}
+
+.app-card h2{
+
+  font-size:30px;
+
+  margin:0 0 8px;
+
+  letter-spacing:-.02em;
+
+}
+
+.app-card p{
+
+  color:#6e6e73;
+
+  margin:0 0 18px;
+
+}
+
+.tags{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:8px;
+
+  margin:16px 0;
+
+}
+
+.tag{
+
+  background:#f5f5f7;
+
+  border:1px solid #e5e5ea;
+
+  border-radius:999px;
+
+  padding:6px 12px;
+
+  font-size:13px;
+
+  color:#3a3a3c;
+
+}
+
+.tag.status{
+
+  background:#fff7e6;
+
+  border-color:#ffd68a;
+
+  color:#9a6700;
+
+}
+
+.meta{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:12px;
+
+  margin-top:18px;
+
+}
+
+.meta div{
+
+  background:#f5f5f7;
+
+  border-radius:16px;
+
+  padding:14px;
+
+}
+
+.meta strong{
+
+  display:block;
+
+  font-size:13px;
+
+  color:#6e6e73;
+
+}
+
+.meta span{
+
+  font-weight:700;
+
+}
+
+.notice{
+
+  background:#fff;
+
+  border-radius:28px;
+
+  padding:34px;
+
+  box-shadow:0 12px 36px rgba(0,0,0,.06);
+
+}
+
+footer{
+
+  text-align:center;
+
+  color:#86868b;
+
+  font-size:13px;
+
+  padding:50px 20px;
+
+}
 
 @media(max-width:760px){
 
-nav{flex-direction:column;gap:8px}
+  nav{flex-direction:column;gap:8px}
 
-nav a{margin-left:10px}
+  nav a{margin-left:10px}
 
-h1{font-size:42px}
+  h1{font-size:42px}
 
-.lead{font-size:18px}
+  .lead{font-size:18px}
 
-.app-card{grid-template-columns:1fr}
+  .app-card{grid-template-columns:1fr}
 
-.meta{grid-template-columns:1fr}
+  .meta{grid-template-columns:1fr}
 
 }
 
@@ -110,11 +374,11 @@ h1{font-size:42px}
 
 <div class="badge">Apps</div>
 
-<h1>Clinical apps designed<br>for real practice.</h1>
+<h1>Clinical apps designed<br>for healthcare professionals.</h1>
 
 <p class="lead">
 
-Taka Medical Appsは、医療従事者の学習、情報整理、臨床判断支援を目的としたiPhone・iPad向けアプリを開発しています。
+Taka Medical Appsは、医療従事者の学習、情報整理、臨床判断支援を目的としたiOSアプリシリーズです。現在、一部アプリはApp Store公開に向けて準備中です。
 
 </p>
 
@@ -124,7 +388,7 @@ Taka Medical Appsは、医療従事者の学習、情報整理、臨床判断支
 
 <div class="app-card">
 
-<div class="app-icon">UC</div>
+<img class="app-icon-img" src="unified-icon.png" alt="Unified Clinical OS icon">
 
 <div>
 
@@ -132,109 +396,21 @@ Taka Medical Appsは、医療従事者の学習、情報整理、臨床判断支
 
 <p>
 
-感染管理、臨床推論、抗菌薬、疾患プロトコール、スコア評価を統合した臨床支援アプリです。
+感染管理、抗菌薬、細菌学、耐性菌、感染対策を統合した医療従事者向け臨床支援アプリです。
 
-「医療辞典」ではなく、現場で情報を組み合わせて考えるためのClinical OSを目指しています。
+医療従事者が必要な情報へ素早くアクセスできるよう、オフライン利用を前提に設計しています。
 
 </p>
 
 <div class="tags">
+
+<span class="tag status">App Store準備中</span>
 
 <span class="tag">感染管理</span>
 
-<span class="tag">臨床推論</span>
-
 <span class="tag">抗菌薬</span>
 
-<span class="tag">スコア</span>
-
-<span class="tag">疾患プロトコール</span>
-
-</div>
-
-<div class="meta">
-
-<div><strong>Status</strong><span>App Store準備中</span></div>
-
-<div><strong>Version</strong><span>1.0.0</span></div>
-
-<div><strong>Platform</strong><span>iPhone / iPad</span></div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="app-card">
-
-<div class="app-icon">AN</div>
-
-<div>
-
-<h2>AssessmentNavi</h2>
-
-<p>
-
-ABCDE、OPQRST、VINDICATE-P、JCS/GCS、SIRS、qSOFAなど、フィジカルアセスメントと初期評価を支援するアプリです。
-
-実際の観察・問診・評価の流れに沿って使える構成を目指しています。
-
-</p>
-
-<div class="tags">
-
-<span class="tag">ABCDE</span>
-
-<span class="tag">OPQRST</span>
-
-<span class="tag">JCS / GCS</span>
-
-<span class="tag">SIRS</span>
-
-<span class="tag">qSOFA</span>
-
-</div>
-
-<div class="meta">
-
-<div><strong>Status</strong><span>App Store準備中</span></div>
-
-<div><strong>Version</strong><span>1.0.0</span></div>
-
-<div><strong>Platform</strong><span>iPhone / iPad</span></div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="app-card">
-
-<div class="app-icon">AB</div>
-
-<div>
-
-<h2>AntibioticsOS</h2>
-
-<p>
-
-抗菌薬、細菌、耐性機序、PK/PD、感染対策、de-escalationの確認を支援する感染症診療支援アプリです。
-
-抗菌薬を調べるだけでなく、感染症診療の流れを整理することを目的としています。
-
-</p>
-
-<div class="tags">
-
-<span class="tag">抗菌薬</span>
-
-<span class="tag">細菌</span>
-
-<span class="tag">耐性菌</span>
-
-<span class="tag">PK/PD</span>
+<span class="tag">細菌学</span>
 
 <span class="tag">感染対策</span>
 
@@ -242,11 +418,11 @@ ABCDE、OPQRST、VINDICATE-P、JCS/GCS、SIRS、qSOFAなど、フィジカルア
 
 <div class="meta">
 
-<div><strong>Status</strong><span>App Store準備中</span></div>
+<div><strong>Status</strong><span>公開準備中</span></div>
 
 <div><strong>Version</strong><span>1.0.0</span></div>
 
-<div><strong>Platform</strong><span>iPhone / iPad</span></div>
+<div><strong>Platform</strong><span>iOS</span></div>
 
 </div>
 
@@ -256,41 +432,41 @@ ABCDE、OPQRST、VINDICATE-P、JCS/GCS、SIRS、qSOFAなど、フィジカルア
 
 <div class="app-card">
 
-<div class="app-icon">DP</div>
+<img class="app-icon-img" src="clinicalworkspace-icon.png" alt="Clinical Workspace icon">
 
 <div>
 
-<h2>Disease Protocol OS</h2>
+<h2>Clinical Workspace</h2>
 
 <p>
 
-疾患別の症状、観察項目、初期対応、鑑別、重症度評価を整理するプロトコール支援アプリです。
+臨床推論、感染症、抗菌薬、フィジカルアセスメント、疾患情報を統合した次世代の臨床支援ワークスペースです。
 
-臨床現場で「次に何を見るか」を支援する構成を目指しています。
+現在、App Store公開に向けて開発・調整中です。
 
 </p>
 
 <div class="tags">
 
-<span class="tag">疾患</span>
+<span class="tag status">Coming Soon</span>
 
-<span class="tag">病態</span>
+<span class="tag">Clinical Reasoning</span>
 
-<span class="tag">観察項目</span>
+<span class="tag">Infection</span>
 
-<span class="tag">初期対応</span>
+<span class="tag">Assessment</span>
 
-<span class="tag">鑑別</span>
+<span class="tag">Disease Library</span>
 
 </div>
 
 <div class="meta">
 
-<div><strong>Status</strong><span>App Store準備中</span></div>
+<div><strong>Status</strong><span>開発・公開準備中</span></div>
 
-<div><strong>Version</strong><span>1.0.0</span></div>
+<div><strong>Version</strong><span>準備中</span></div>
 
-<div><strong>Platform</strong><span>iPhone / iPad</span></div>
+<div><strong>Platform</strong><span>iOS予定</span></div>
 
 </div>
 
