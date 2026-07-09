@@ -10,49 +10,55 @@
 
   <title>Taka Medical Apps</title>
 
+  <meta name="description" content="Taka Medical Apps は、医療・看護・感染管理・フィジカルアセスメントの学習を支援する教育アプリを開発しています。" />
+
+  <meta property="og:title" content="Taka Medical Apps" />
+
+  <meta property="og:description" content="医療・看護・感染管理・フィジカルアセスメントの学習を支援する教育アプリブランド。" />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="assessment-screen.jpg" />
+
   <style>
 
     :root {
 
-      --bg: #0f172a;
+      --bg: #f5f7fb;
 
-      --card: #182235;
+      --card: #ffffff;
 
-      --card-soft: #1f2a3d;
+      --text: #111827;
 
-      --text: #e5e7eb;
+      --muted: #6b7280;
 
-      --muted: #94a3b8;
+      --accent: #2563eb;
 
-      --accent: #38bdf8;
+      --accent-soft: #dbeafe;
 
-      --accent-soft: rgba(56, 189, 248, 0.14);
+      --border: #e5e7eb;
 
-      --border: rgba(148, 163, 184, 0.18);
+      --dark: #0f172a;
 
     }
 
-    * { box-sizing: border-box; }
+    * {
+
+      box-sizing: border-box;
+
+    }
 
     body {
 
       margin: 0;
 
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
-      background: radial-gradient(circle at top left, #1e3a5f 0%, var(--bg) 42%, #020617 100%);
+      background: var(--bg);
 
       color: var(--text);
 
-      line-height: 1.7;
-
-    }
-
-    a {
-
-      color: inherit;
-
-      text-decoration: none;
+      line-height: 1.8;
 
     }
 
@@ -64,9 +70,9 @@
 
       z-index: 10;
 
-      backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.9);
 
-      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(18px);
 
       border-bottom: 1px solid var(--border);
 
@@ -78,79 +84,77 @@
 
       margin: 0 auto;
 
-      padding: 16px 22px;
+      padding: 14px 22px;
 
       display: flex;
-
-      align-items: center;
 
       justify-content: space-between;
 
-      gap: 20px;
+      align-items: center;
 
     }
 
-    .logo {
+    .brand {
 
       font-weight: 800;
 
-      letter-spacing: 0.02em;
+      letter-spacing: -0.02em;
 
     }
 
-    .nav-links {
+    .nav a {
 
-      display: flex;
+      color: var(--text);
 
-      gap: 18px;
+      text-decoration: none;
 
-      font-size: 0.92rem;
+      margin-left: 18px;
 
-      color: var(--muted);
+      font-size: 14px;
 
-      flex-wrap: wrap;
-
-    }
-
-    .nav-links a:hover { color: var(--text); }
-
-    main {
-
-      max-width: 1120px;
-
-      margin: 0 auto;
-
-      padding: 56px 22px 40px;
+      font-weight: 600;
 
     }
 
     .hero {
 
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+      color: white;
+
+      padding: 86px 22px;
+
+    }
+
+    .hero-inner {
+
+      max-width: 1120px;
+
+      margin: 0 auto;
+
       display: grid;
 
       grid-template-columns: 1.1fr 0.9fr;
 
-      gap: 42px;
+      gap: 48px;
 
       align-items: center;
-
-      padding: 30px 0 56px;
 
     }
 
     .badge {
 
-      display: inline-flex;
+      display: inline-block;
 
-      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.14);
+
+      border: 1px solid rgba(255, 255, 255, 0.24);
+
+      padding: 6px 12px;
 
       border-radius: 999px;
 
-      background: var(--accent-soft);
-
-      color: #bae6fd;
-
-      font-size: 0.86rem;
+      font-size: 13px;
 
       margin-bottom: 18px;
 
@@ -158,137 +162,121 @@
 
     h1 {
 
-      font-size: clamp(2.7rem, 6vw, 5.2rem);
+      font-size: clamp(36px, 6vw, 64px);
 
-      line-height: 1.02;
+      line-height: 1.08;
 
       margin: 0 0 22px;
 
-      letter-spacing: -0.06em;
+      letter-spacing: -0.05em;
 
     }
 
     .hero p {
 
-      color: var(--muted);
+      color: #dbeafe;
 
-      font-size: 1.08rem;
+      font-size: 17px;
 
-      max-width: 640px;
+      max-width: 680px;
 
-      margin: 0 0 22px;
-
-    }
-
-    .notice {
-
-      margin: 18px 0 26px;
-
-      padding: 14px 16px;
-
-      border: 1px solid var(--border);
-
-      border-radius: 16px;
-
-      background: rgba(255, 255, 255, 0.035);
-
-      color: #aab6c7;
-
-      font-size: 0.92rem;
-
-      line-height: 1.7;
+      margin-bottom: 30px;
 
     }
 
-    .buttons {
+    .actions {
 
       display: flex;
 
-      gap: 14px;
-
       flex-wrap: wrap;
+
+      gap: 14px;
 
     }
 
     .button {
 
-      display: inline-flex;
+      display: inline-block;
 
-      align-items: center;
+      text-decoration: none;
 
-      justify-content: center;
+      padding: 13px 18px;
 
-      padding: 12px 18px;
-
-      border-radius: 999px;
+      border-radius: 14px;
 
       font-weight: 700;
 
-      border: 1px solid var(--border);
-
-      background: rgba(255,255,255,0.06);
+      font-size: 15px;
 
     }
 
     .button.primary {
 
-      background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+      background: white;
 
-      color: #031018;
-
-      border: none;
+      color: #1e3a8a;
 
     }
 
-    .mockups {
+    .button.secondary {
 
-      display: grid;
+      background: rgba(255, 255, 255, 0.12);
 
-      grid-template-columns: 1fr 1fr;
+      color: white;
 
-      gap: 14px;
-
-      align-items: end;
+      border: 1px solid rgba(255, 255, 255, 0.28);
 
     }
 
-    .mockups img,
+    .hero-card {
 
-    .app-image,
+      background: rgba(255, 255, 255, 0.11);
 
-    .app-icon {
+      border: 1px solid rgba(255, 255, 255, 0.22);
+
+      border-radius: 28px;
+
+      padding: 24px;
+
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+
+    }
+
+    .hero-card img {
 
       width: 100%;
 
-      display: block;
+      border-radius: 20px;
 
-      border-radius: 24px;
+      display: block;
 
     }
 
-    .mockups img {
+    main {
 
-      box-shadow: 0 24px 70px rgba(0,0,0,0.42);
+      max-width: 1120px;
 
-      border: 1px solid var(--border);
+      margin: 0 auto;
+
+      padding: 56px 22px;
 
     }
 
     section {
 
-      padding: 42px 0;
-
-      border-top: 1px solid var(--border);
+      margin-bottom: 56px;
 
     }
 
-    h2 {
+    .section-title {
 
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-size: 30px;
 
-      margin: 0 0 18px;
+      line-height: 1.25;
 
-      letter-spacing: -0.04em;
+      margin: 0 0 12px;
+
+      letter-spacing: -0.03em;
 
     }
 
@@ -296,197 +284,143 @@
 
       color: var(--muted);
 
-      max-width: 780px;
-
-      margin-bottom: 26px;
+      margin: 0 0 26px;
 
     }
 
-    .apps {
+    .grid {
 
       display: grid;
 
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, 1fr);
 
-      gap: 22px;
-
-    }
-
-    .app-card {
-
-      background: rgba(24, 34, 53, 0.86);
-
-      border: 1px solid var(--border);
-
-      border-radius: 28px;
-
-      padding: 22px;
-
-      box-shadow: 0 20px 60px rgba(0,0,0,0.22);
+      gap: 18px;
 
     }
 
-    .app-header {
+    .card {
 
-      display: flex;
-
-      align-items: center;
-
-      gap: 14px;
-
-      margin-bottom: 14px;
-
-    }
-
-    .app-icon {
-
-      width: 68px;
-
-      height: 68px;
-
-      border-radius: 18px;
-
-      object-fit: cover;
-
-    }
-
-    .app-card h3 {
-
-      margin: 0;
-
-      font-size: 1.35rem;
-
-    }
-
-    .app-card p {
-
-      color: var(--muted);
-
-      margin: 10px 0 16px;
-
-    }
-
-    .tags {
-
-      display: flex;
-
-      gap: 8px;
-
-      flex-wrap: wrap;
-
-      margin-bottom: 16px;
-
-    }
-
-    .tag {
-
-      font-size: 0.78rem;
-
-      color: #bae6fd;
-
-      background: var(--accent-soft);
-
-      border: 1px solid rgba(56, 189, 248, 0.2);
-
-      padding: 5px 9px;
-
-      border-radius: 999px;
-
-    }
-
-    .app-image {
-
-      border: 1px solid var(--border);
-
-      background: var(--card-soft);
-
-    }
-
-    .features {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-
-      gap: 16px;
-
-    }
-
-    .feature {
-
-      padding: 20px;
-
-      border-radius: 22px;
-
-      background: rgba(255,255,255,0.045);
-
-      border: 1px solid var(--border);
-
-    }
-
-    .feature strong {
-
-      display: block;
-
-      margin-bottom: 8px;
-
-      font-size: 1.02rem;
-
-    }
-
-    .feature span {
-
-      color: var(--muted);
-
-      font-size: 0.94rem;
-
-    }
-
-    .disclaimer {
-
-      color: var(--muted);
-
-      background: rgba(255,255,255,0.04);
+      background: var(--card);
 
       border: 1px solid var(--border);
 
       border-radius: 24px;
 
+      padding: 24px;
+
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
+
+    }
+
+    .card h3 {
+
+      margin: 0 0 10px;
+
+      font-size: 20px;
+
+    }
+
+    .card p {
+
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 15px;
+
+    }
+
+    .app-card {
+
+      display: grid;
+
+      grid-template-columns: 92px 1fr;
+
+      gap: 20px;
+
+      align-items: center;
+
+    }
+
+    .app-icon {
+
+      width: 92px;
+
+      height: 92px;
+
+      border-radius: 22px;
+
+      object-fit: cover;
+
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.18);
+
+    }
+
+    .notice {
+
+      background: #fff7ed;
+
+      border: 1px solid #fed7aa;
+
+      color: #7c2d12;
+
+      border-radius: 22px;
+
       padding: 22px;
+
+      font-size: 14px;
 
     }
 
     footer {
 
+      border-top: 1px solid var(--border);
+
+      padding: 34px 22px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+    }
+
+    .footer-inner {
+
       max-width: 1120px;
 
       margin: 0 auto;
 
-      padding: 28px 22px 46px;
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 18px;
+
+      flex-wrap: wrap;
+
+    }
+
+    footer a {
 
       color: var(--muted);
 
-      border-top: 1px solid var(--border);
+      text-decoration: none;
 
-      font-size: 0.9rem;
+      margin-left: 14px;
 
     }
 
     @media (max-width: 820px) {
 
-      .hero,
-
-      .apps,
-
-      .features {
+      .hero-inner {
 
         grid-template-columns: 1fr;
 
       }
 
-      .mockups {
+      .grid {
 
-        max-width: 520px;
+        grid-template-columns: 1fr;
 
       }
 
@@ -494,7 +428,31 @@
 
         align-items: flex-start;
 
-        flex-direction: column;
+        gap: 12px;
+
+      }
+
+      .nav-links {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+
+      }
+
+      .nav a {
+
+        margin-left: 12px;
+
+        margin-bottom: 6px;
+
+      }
+
+      .app-card {
+
+        grid-template-columns: 1fr;
 
       }
 
@@ -508,219 +466,95 @@
 
   <header>
 
-    <nav class="nav">
+    <div class="nav">
 
-      <a class="logo" href="#">Taka Medical Apps</a>
+      <div class="brand">Taka Medical Apps</div>
 
-      <div class="nav-links">
+      <nav class="nav-links">
 
-        <a href="#apps">Apps</a>
+        <a href="index.html">Home</a>
 
-        <a href="#about">About</a>
+        <a href="apps.html">Apps</a>
 
-        <a href="#faq">FAQ</a>
+        <a href="about.html">About</a>
 
         <a href="support.html">Support</a>
 
         <a href="privacy.html">Privacy</a>
 
-        <a href="terms.html">Terms</a>
+      </nav>
 
-        <a href="contact.html">Contact</a>
-
-      </div>
-
-    </nav>
+    </div>
 
   </header>
 
-  <main>
+  <section class="hero">
 
-    <section class="hero">
+    <div class="hero-inner">
 
       <div>
 
-        <div class="badge">Medical Learning & Reference Apps</div>
+        <div class="badge">Medical & Nursing Education Apps</div>
 
-        <h1>Learning & Reference<br />for Healthcare.</h1>
+        <h1>医療と看護の学習を、もっと整理しやすく。</h1>
 
         <p>
 
-          医療従事者の学習と情報整理のために。感染管理、抗菌薬、臨床推論、フィジカルアセスメントを、iOSアプリとして使いやすく整理しています。
+          Taka Medical Apps は、医療従事者・看護学生・教育者のための学習支援アプリを開発しています。
+
+          フィジカルアセスメント、臨床推論、感染管理など、現場で必要となる知識を学習しやすい形に整理します。
 
         </p>
 
-        <div class="notice">
+        <div class="actions">
 
-          現在、一部アプリはApp Store公開準備中です。対応端末・配信状況は各アプリの公開状況に応じて順次更新します。
+          <a class="button primary" href="apps.html">アプリを見る</a>
 
-        </div>
-
-        <div class="buttons">
-
-          <a class="button primary" href="#apps">アプリを見る</a>
-
-          <a class="button" href="support.html">サポートへ</a>
+          <a class="button secondary" href="support.html">サポート</a>
 
         </div>
 
       </div>
 
-      <div class="mockups">
+      <div class="hero-card">
 
-        <img src="unified-screen.jpg" alt="Unified Clinical OS screen" />
-
-        <img src="assessment-screen.jpg" alt="Clinical Workspace preview under development" />
+        <img src="assessment-screen.jpg" alt="Assessment Navi screen image">
 
       </div>
 
-    </section>
+    </div>
 
-    <section id="about">
+  </section>
 
-      <h2>Designed by a Clinical Nurse.</h2>
+  <main>
 
-      <p class="section-lead">
+    <section>
 
-        Taka Medical Appsは、医療従事者の学習・情報整理・臨床リファレンスを目的として設計されたアプリシリーズです。現場で参照しやすい構造、読みやすい情報、継続的な改善を重視しています。
+      <h2 class="section-title">Featured App</h2>
 
-      </p>
+      <p class="section-lead">現在公開準備中の主要アプリです。</p>
 
-    </section>
+      <div class="card app-card">
 
-    <section id="apps">
+        <img class="app-icon" src="assessment-icon.png" alt="Assessment Navi icon">
 
-      <h2>Featured Apps</h2>
+        <div>
 
-      <div class="apps">
-
-        <article class="app-card">
-
-          <div class="app-header">
-
-            <img class="app-icon" src="unified-icon.png" alt="Unified Clinical OS icon" />
-
-            <div>
-
-              <h3>Unified Clinical OS</h3>
-
-            </div>
-
-          </div>
+          <h3>Assessment Navi</h3>
 
           <p>
 
-            感染管理、抗菌薬、細菌学、耐性菌、感染対策を統合した、医療従事者向け臨床リファレンスアプリです。
+            Assessment Navi は、フィジカルアセスメントと臨床推論の学習を支援する教育アプリです。
+
+            症状、観察項目、Red Flags、アセスメントの考え方を整理し、学生や医療従事者の学習をサポートします。
 
           </p>
 
-          <div class="tags">
+          <p style="margin-top:14px;">
 
-            <span class="tag">感染管理</span>
-
-            <span class="tag">抗菌薬</span>
-
-            <span class="tag">細菌学</span>
-
-            <span class="tag">感染対策</span>
-
-          </div>
-
-          <img class="app-image" src="unified-screen.jpg" alt="Unified Clinical OS preview" />
-
-        </article>
-
-        <article class="app-card">
-
-          <div class="app-header">
-
-            <img class="app-icon" src="clinicalworkspace-icon.png" alt="Clinical Workspace icon" />
-
-            <div>
-
-              <h3>Clinical Workspace</h3>
-
-            </div>
-
-          </div>
-
-          <p>
-
-            臨床推論、感染症、抗菌薬、フィジカルアセスメントを統合した、医療知識の学習・情報参照ワークスペースです。
+            <a class="button primary" href="apps.html">詳しく見る</a>
 
           </p>
-
-          <div class="tags">
-
-            <span class="tag">公開準備中</span>
-
-            <span class="tag">Clinical Reasoning</span>
-
-            <span class="tag">Infection</span>
-
-            <span class="tag">Assessment</span>
-
-          </div>
-
-          <img class="app-image" src="assessment-screen.jpg" alt="Clinical Workspace preview under development" />
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <section id="faq">
-
-      <h2>Why Taka Medical Apps?</h2>
-
-      <div class="features">
-
-        <div class="feature">
-
-          <strong>Offline First</strong>
-
-          <span>端末内で情報を確認しやすい構成を重視しています。</span>
-
-        </div>
-
-        <div class="feature">
-
-          <strong>Clinical Design</strong>
-
-          <span>医療者が学習内容や参照情報を整理しやすい設計を目指しています。</span>
-
-        </div>
-
-        <div class="feature">
-
-          <strong>iOS App Design</strong>
-
-          <span>医療従事者がスマートフォンやタブレット環境で参照しやすい設計を目指しています。</span>
-
-        </div>
-
-        <div class="feature">
-
-          <strong>Structured Content</strong>
-
-          <span>疾患、細菌、薬剤、スコアを整理して参照しやすくしています。</span>
-
-        </div>
-
-        <div class="feature">
-
-          <strong>Continuous Updates</strong>
-
-          <span>内容とUIを継続的に改善していきます。</span>
-
-        </div>
-
-        <div class="feature">
-
-          <strong>Privacy Conscious</strong>
-
-          <span>個人情報を取得しない設計を重視しています。</span>
 
         </div>
 
@@ -730,11 +564,51 @@
 
     <section>
 
-      <h2>Medical Disclaimer</h2>
+      <h2 class="section-title">What We Focus On</h2>
 
-      <div class="disclaimer">
+      <p class="section-lead">現場で使う知識を、教育として安全に整理することを重視しています。</p>
 
-        本サイトおよび関連アプリは、医療従事者の学習、情報整理および医療知識の参照を目的として設計されています。診断、治療、処方、医療行為の最終判断を代替するものではありません。実際の医療判断は、最新のガイドライン、添付文書、所属施設の規定および患者の状態を踏まえて、有資格者が行ってください。
+      <div class="grid">
+
+        <div class="card">
+
+          <h3>Assessment</h3>
+
+          <p>視診・触診・打診・聴診、問診、バイタルサインなどを学習しやすく整理します。</p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Clinical Reasoning</h3>
+
+          <p>症状から考える視点、Red Flags、鑑別の整理など、思考過程の学習を支援します。</p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>Infection Control</h3>
+
+          <p>感染管理、標準予防策、周術期感染対策などの教育コンテンツを扱います。</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="notice">
+
+        <strong>Important Notice</strong><br>
+
+        Taka Medical Apps が提供するアプリは、教育および学習支援を目的としたものです。
+
+        診断、治療、投薬、患者個別の医療判断を行うものではありません。
+
+        実際の診療・看護では、所属施設の方針、最新のガイドライン、添付文書、医師および医療専門職の判断を優先してください。
 
       </div>
 
@@ -744,7 +618,21 @@
 
   <footer>
 
-    © 2026 Taka Medical Apps. All rights reserved.
+    <div class="footer-inner">
+
+      <div>© 2026 Taka Medical Apps. All rights reserved.</div>
+
+      <div>
+
+        <a href="privacy.html">Privacy Policy</a>
+
+        <a href="terms.html">Terms</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+    </div>
 
   </footer>
 
