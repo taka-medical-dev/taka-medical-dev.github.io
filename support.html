@@ -6,75 +6,147 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Support | Taka Medical Apps</title>
+<title>Support | Assessment Navi</title>
+
+<meta name="description" content="Assessment Navi Support">
+
+<link rel="icon" href="assessment-navi-icon.png">
+
+<link rel="apple-touch-icon" href="assessment-navi-icon.png">
 
 <style>
+
+*{
+
+box-sizing:border-box;
+
+}
 
 body{
 
 margin:0;
 
-font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif;
+font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
 
-background:#f5f5f7;
+background:#f5f7fb;
 
-color:#1d1d1f;
+color:#111827;
+
+line-height:1.8;
 
 }
 
 header{
 
-background:white;
-
-border-bottom:1px solid #ddd;
-
 position:sticky;
 
 top:0;
 
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid #e5e7eb;
+
 }
 
-nav{
+.nav{
 
-max-width:1000px;
+max-width:1100px;
 
 margin:auto;
+
+padding:15px 22px;
 
 display:flex;
 
 justify-content:space-between;
 
-padding:18px;
+align-items:center;
+
+}
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-weight:800;
+
+text-decoration:none;
+
+color:#111827;
+
+}
+
+.brand img{
+
+width:34px;
+
+height:34px;
+
+border-radius:9px;
 
 }
 
 nav a{
 
+margin-left:18px;
+
 text-decoration:none;
 
-color:#1d1d1f;
+color:#111827;
 
-margin-left:20px;
+font-weight:600;
+
+font-size:14px;
 
 }
 
-.container{
+.hero{
+
+padding:80px 20px;
+
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+margin:0 0 16px;
+
+letter-spacing:-.05em;
+
+}
+
+.hero p{
+
+color:#dbeafe;
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+main{
 
 max-width:900px;
 
 margin:auto;
 
-padding:70px 25px;
-
-}
-
-h1{
-
-font-size:48px;
-
-margin-bottom:10px;
+padding:60px 22px;
 
 }
 
@@ -82,41 +154,91 @@ margin-bottom:10px;
 
 background:white;
 
-padding:35px;
+border-radius:28px;
 
-border-radius:20px;
+padding:32px;
 
-box-shadow:0 10px 30px rgba(0,0,0,.05);
+margin-bottom:28px;
 
-margin-top:30px;
+box-shadow:0 20px 60px rgba(15,23,42,.08);
+
+}
+
+h2{
+
+margin-top:0;
+
+font-size:28px;
+
+}
+
+p{
+
+color:#64748b;
 
 }
 
 .email{
 
-margin-top:20px;
+display:inline-block;
 
-padding:15px;
+margin-top:12px;
 
-background:#f5f5f7;
+padding:14px 20px;
 
-border-radius:12px;
+background:#2563eb;
 
-font-size:18px;
+color:white;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-weight:700;
+
+}
+
+.email:hover{
+
+opacity:.9;
+
+}
+
+.notice{
+
+background:#fff7ed;
+
+border:1px solid #fed7aa;
+
+padding:22px;
+
+border-radius:20px;
+
+color:#7c2d12;
 
 }
 
 footer{
 
-margin-top:80px;
+padding:35px;
 
-padding:30px;
+border-top:1px solid #e5e7eb;
 
 text-align:center;
 
-color:#888;
-
 font-size:13px;
+
+color:#64748b;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
 
 }
 
@@ -128,83 +250,97 @@ font-size:13px;
 
 <header>
 
+<div class="nav">
+
+<a class="brand" href="index.html">
+
+<img src="assessment-navi-icon.png">
+
+<span>Taka Medical Apps</span>
+
+</a>
+
 <nav>
-
-<div><strong>Taka Medical Apps</strong></div>
-
-<div>
 
 <a href="index.html">Home</a>
 
 <a href="apps.html">Apps</a>
 
+<a href="about.html">About</a>
+
 <a href="privacy.html">Privacy</a>
-
-<a href="terms.html">Terms</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
 
 </nav>
 
+</div>
+
 </header>
 
-<div class="container">
+<section class="hero">
 
-<h1>サポート</h1>
+<h1>Support</h1>
 
 <p>
 
-Taka Medical Appsをご利用いただきありがとうございます。
+Assessment Navi に関するお問い合わせやご意見はこちらからお願いいたします。
 
 </p>
+
+</section>
+
+<main>
 
 <div class="card">
 
-<h2>お問い合わせ</h2>
+<h2>Contact</h2>
 
 <p>
 
-アプリに関するご質問・不具合報告・改善要望は、
-
-メールにて受け付けています。
+アプリに関するご質問・不具合報告・ご要望などがございましたら、お気軽にご連絡ください。
 
 </p>
 
-<div class="email">
+<a class="email" href="mailto:ttrs.5296@gmail.com">
 
-hayabusa81@outlook.jp
+お問い合わせ
 
-</div>
-
-<p style="margin-top:30px">
-
-通常3営業日以内に返信いたします。
-
-</p>
+</a>
 
 </div>
 
 <div class="card">
 
-<h2>対象アプリ</h2>
+<h2>Supported App</h2>
 
-<ul>
+<p>
 
-<li>Unified Clinical OS</li>
+Assessment Navi
 
-<li>AssessmentNavi</li>
+</p>
 
-<li>AntibioticsOS</li>
+<p>
 
-<li>Disease Protocol OS</li>
+Version 1.0 and later
 
-</ul>
+</p>
+
+</div>
+
+<div class="notice">
+
+<strong>Educational Purpose</strong>
+
+<br><br>
+
+Assessment Navi は教育・学習支援を目的としたアプリです。
+
+診断、治療、投薬、患者個別の医療判断を目的とするものではありません。
+
+実際の診療では医療専門職の判断を優先してください。
 
 </div>
 
-</div>
+</main>
 
 <footer>
 
