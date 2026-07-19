@@ -1,353 +1,790 @@
 <!DOCTYPE html>
-
 <html lang="ja">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | Taka Medical Apps</title>
+  <meta name="description" content="Taka Medical Apps が提供するアプリのサポートページ。お問い合わせとよくあるご質問。" />
+  <style>
 
-<meta charset="UTF-8">
+    * {
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      box-sizing: border-box;
 
-<title>Support | Assessment Navi</title>
+    }
 
-<meta name="description" content="Assessment Navi Support">
+    html {
 
-<link rel="icon" href="assessment-navi-icon.png">
+      scroll-behavior: smooth;
 
-<link rel="apple-touch-icon" href="assessment-navi-icon.png">
+    }
 
-<style>
+    body {
 
-*{
+      margin: 0;
 
-box-sizing:border-box;
+      font-family:
 
-}
+        -apple-system,
 
-body{
+        BlinkMacSystemFont,
 
-margin:0;
+        "Helvetica Neue",
 
-font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+        "Hiragino Kaku Gothic ProN",
 
-background:#f5f7fb;
+        "Yu Gothic",
 
-color:#111827;
+        Arial,
 
-line-height:1.8;
+        sans-serif;
 
-}
+      background: #f5f7fb;
 
-header{
+      color: #111827;
 
-position:sticky;
+      line-height: 1.8;
 
-top:0;
+    }
 
-background:rgba(255,255,255,.88);
+    header {
 
-backdrop-filter:blur(18px);
+      position: sticky;
 
-border-bottom:1px solid #e5e7eb;
+      top: 0;
 
-}
+      z-index: 10;
 
-.nav{
+      background: rgba(255, 255, 255, 0.92);
 
-max-width:1100px;
+      backdrop-filter: blur(18px);
 
-margin:auto;
+      -webkit-backdrop-filter: blur(18px);
 
-padding:15px 22px;
+      border-bottom: 1px solid #e5e7eb;
 
-display:flex;
+    }
 
-justify-content:space-between;
+    .nav {
 
-align-items:center;
+      max-width: 1120px;
 
-}
+      margin: 0 auto;
 
-.brand{
+      padding: 14px 22px;
 
-display:flex;
+      display: flex;
 
-align-items:center;
+      justify-content: space-between;
 
-gap:10px;
+      align-items: center;
 
-font-weight:800;
+      gap: 20px;
 
-text-decoration:none;
+    }
 
-color:#111827;
+    .brand {
 
-}
+      color: #111827;
 
-.brand img{
+      font-weight: 800;
 
-width:34px;
+      text-decoration: none;
 
-height:34px;
+      white-space: nowrap;
 
-border-radius:9px;
+    }
 
-}
+    .nav-links {
 
-nav a{
+      display: flex;
 
-margin-left:18px;
+      align-items: center;
 
-text-decoration:none;
+      flex-wrap: wrap;
 
-color:#111827;
+      justify-content: flex-end;
 
-font-weight:600;
+    }
 
-font-size:14px;
+    .nav a {
 
-}
+      color: #111827;
 
-.hero{
+      text-decoration: none;
 
-padding:80px 20px;
+      margin-left: 18px;
 
-background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      font-size: 14px;
 
-color:white;
+      font-weight: 600;
 
-text-align:center;
+    }
 
-}
+    .nav a:hover,
 
-.hero h1{
+    .nav a:focus-visible {
 
-font-size:52px;
+      color: #2563eb;
 
-margin:0 0 16px;
+    }
 
-letter-spacing:-.05em;
+    .hero {
 
-}
+      background:
 
-.hero p{
+        radial-gradient(
 
-color:#dbeafe;
+          circle at 85% 20%,
 
-max-width:650px;
+          rgba(56, 189, 248, 0.24),
 
-margin:auto;
+          transparent 32%
 
-}
+        ),
 
-main{
+        linear-gradient(135deg, #0f172a, #1e3a8a);
 
-max-width:900px;
+      color: white;
 
-margin:auto;
+      padding: 72px 22px;
 
-padding:60px 22px;
+    }
 
-}
+    .hero-inner {
 
-.card{
+      max-width: 1120px;
 
-background:white;
+      margin: 0 auto;
 
-border-radius:28px;
+    }
 
-padding:32px;
+    h1 {
 
-margin-bottom:28px;
+      margin: 0 0 18px;
 
-box-shadow:0 20px 60px rgba(15,23,42,.08);
+      font-size: clamp(34px, 6vw, 56px);
 
-}
+      line-height: 1.1;
 
-h2{
+      letter-spacing: -0.04em;
 
-margin-top:0;
+    }
 
-font-size:28px;
+    .hero p {
 
-}
+      max-width: 760px;
 
-p{
+      margin: 0;
 
-color:#64748b;
+      color: #dbeafe;
 
-}
+      font-size: 17px;
 
-.email{
+    }
 
-display:inline-block;
+    main {
 
-margin-top:12px;
+      max-width: 1120px;
 
-padding:14px 20px;
+      margin: 0 auto;
 
-background:#2563eb;
+      padding: 56px 22px;
 
-color:white;
+    }
 
-text-decoration:none;
+    .section-heading {
 
-border-radius:14px;
+      margin-bottom: 30px;
 
-font-weight:700;
+    }
 
-}
+    .section-heading h2 {
 
-.email:hover{
+      margin: 0 0 8px;
 
-opacity:.9;
+      font-size: clamp(28px, 4vw, 38px);
 
-}
+      letter-spacing: -0.03em;
 
-.notice{
+    }
 
-background:#fff7ed;
+    .section-heading p {
 
-border:1px solid #fed7aa;
+      max-width: 760px;
 
-padding:22px;
+      margin: 0;
 
-border-radius:20px;
+      color: #6b7280;
 
-color:#7c2d12;
+    }
 
-}
+    .app-card {
 
-footer{
+      display: grid;
 
-padding:35px;
+      grid-template-columns: 120px 1fr;
 
-border-top:1px solid #e5e7eb;
+      gap: 26px;
 
-text-align:center;
+      margin-bottom: 28px;
 
-font-size:13px;
+      padding: 28px;
 
-color:#64748b;
+      background: white;
 
-}
+      border: 1px solid #e5e7eb;
 
-@media(max-width:768px){
+      border-radius: 28px;
 
-.hero h1{
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
 
-font-size:38px;
+    }
 
-}
+    .app-card:target {
 
-}
+      scroll-margin-top: 100px;
 
-</style>
+    }
 
+    .app-icon {
+
+      width: 120px;
+
+      height: 120px;
+
+      border-radius: 28px;
+
+      object-fit: cover;
+
+      background: #eef2ff;
+
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.18);
+
+    }
+
+    .app-content {
+
+      min-width: 0;
+
+    }
+
+    .app-title-row {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-start;
+
+      gap: 18px;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 6px;
+
+    }
+
+    .app-title-row h2 {
+
+      margin: 0;
+
+      font-size: 30px;
+
+      line-height: 1.25;
+
+      letter-spacing: -0.03em;
+
+    }
+
+    h3 {
+
+      margin: 28px 0 10px;
+
+      font-size: 20px;
+
+    }
+
+    p {
+
+      margin: 0 0 14px;
+
+      color: #4b5563;
+
+    }
+
+    ul {
+
+      padding-left: 22px;
+
+      color: #4b5563;
+
+    }
+
+    li {
+
+      margin-bottom: 6px;
+
+    }
+
+    .labels {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-bottom: 12px;
+
+    }
+
+    .label {
+
+      display: inline-block;
+
+      padding: 5px 10px;
+
+      border-radius: 999px;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+    }
+
+    .label-featured {
+
+      background: #dbeafe;
+
+      color: #1e40af;
+
+    }
+
+    .label-review {
+
+      background: #ede9fe;
+
+      color: #5b21b6;
+
+    }
+
+    .label-education {
+
+      background: #dcfce7;
+
+      color: #166534;
+
+    }
+
+    .status {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 7px 12px;
+
+      border-radius: 999px;
+
+      background: #f3f4f6;
+
+      color: #374151;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      white-space: nowrap;
+
+    }
+
+    .status-dot {
+
+      width: 8px;
+
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #8b5cf6;
+
+    }
+
+    .button-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 18px;
+
+    }
+
+    .button {
+
+      display: inline-block;
+
+      padding: 12px 18px;
+
+      border-radius: 14px;
+
+      background: #2563eb;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      transition:
+
+        transform 0.2s ease,
+
+        background 0.2s ease;
+
+    }
+
+    .button:hover,
+
+    .button:focus-visible {
+
+      background: #1d4ed8;
+
+      transform: translateY(-1px);
+
+    }
+
+    .button-secondary {
+
+      background: #eef2ff;
+
+      color: #1e40af;
+
+    }
+
+    .button-secondary:hover,
+
+    .button-secondary:focus-visible {
+
+      background: #dbeafe;
+
+    }
+
+    .review-note {
+
+      margin-top: 18px;
+
+      padding: 16px 18px;
+
+      background: #f5f3ff;
+
+      border: 1px solid #ddd6fe;
+
+      border-radius: 16px;
+
+      color: #5b21b6;
+
+      font-size: 14px;
+
+    }
+
+    .notice {
+
+      margin-top: 34px;
+
+      padding: 22px;
+
+      background: #fff7ed;
+
+      border: 1px solid #fed7aa;
+
+      border-radius: 22px;
+
+      color: #7c2d12;
+
+      font-size: 14px;
+
+    }
+
+    .notice strong {
+
+      display: inline-block;
+
+      margin-bottom: 4px;
+
+    }
+
+    footer {
+
+      padding: 34px 22px;
+
+      border-top: 1px solid #e5e7eb;
+
+      color: #6b7280;
+
+      font-size: 13px;
+
+    }
+
+    .footer-inner {
+
+      max-width: 1120px;
+
+      margin: 0 auto;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 18px;
+
+      flex-wrap: wrap;
+
+    }
+
+    footer a {
+
+      margin-left: 14px;
+
+      color: #6b7280;
+
+      text-decoration: none;
+
+    }
+
+    footer a:hover,
+
+    footer a:focus-visible {
+
+      color: #2563eb;
+
+    }
+
+    @media (max-width: 760px) {
+
+      .nav {
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+      }
+
+      .nav-links {
+
+        justify-content: flex-end;
+
+      }
+
+      .nav a {
+
+        margin-left: 12px;
+
+        margin-bottom: 6px;
+
+      }
+
+      .hero {
+
+        padding: 58px 22px;
+
+      }
+
+      main {
+
+        padding-top: 42px;
+
+      }
+
+      .app-card {
+
+        grid-template-columns: 1fr;
+
+        padding: 22px;
+
+      }
+
+      .app-icon {
+
+        width: 96px;
+
+        height: 96px;
+
+        border-radius: 23px;
+
+      }
+
+      .app-title-row {
+
+        display: block;
+
+      }
+
+      .status {
+
+        margin-top: 12px;
+
+      }
+
+    }
+
+    @media (max-width: 520px) {
+
+      .nav {
+
+        display: block;
+
+      }
+
+      .nav-links {
+
+        justify-content: flex-start;
+
+        margin-top: 10px;
+
+      }
+
+      .nav a {
+
+        margin: 0 14px 6px 0;
+
+      }
+
+      .app-title-row h2 {
+
+        font-size: 26px;
+
+      }
+
+      .button {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+      footer a {
+
+        margin: 0 14px 0 0;
+
+      }
+
+    }
+
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">Taka Medical Apps</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Support</h1>
+      <p>
+        Taka Medical Apps のアプリに関するお問い合わせやご意見はこちらからお願いいたします。
+      </p>
+    </div>
+  </section>
+  <main>
+    <div class="section-heading">
+      <h2>Support</h2>
+      <p>
+        Taka Medical Apps のアプリに関するご質問・不具合報告・ご要望を承ります。
+      </p>
+    </div>
 
-<header>
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">お問い合わせ</h3>
+        <p>
+          アプリに関するご質問、不具合のご報告、内容の誤りのご指摘、
+          機能のご要望などがございましたら、お気軽にご連絡ください。
+          不具合や内容のご指摘の際は、アプリ名と該当箇所（章・節の名称など）を
+          お知らせいただけますと助かります。
+        </p>
+        <div class="button-row">
+          <a class="button" href="mailto:ttrs.5296@gmail.com">
+            メールで問い合わせる
+          </a>
+        </div>
+      </div>
+    </article>
 
-<div class="nav">
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">対象アプリ</h3>
+      <ul>
+        <li>Assessment Navi</li>
+        <li>Antibiotic Atlas</li>
+        <li>周術期ナビ（Periop Navi）</li>
+      </ul>
+        <p>
+          いずれも Version 1.0 以降を対象としています。
+        </p>
+      </div>
+    </article>
 
-<a class="brand" href="index.html">
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">よくあるご質問</h3>
+        <p>
+          <strong>通信環境がなくても使えますか。</strong><br>
+          周術期ナビ（Periop Navi）は完全にオフラインで動作し、通信は一切行いません。
+        </p>
+        <p>
+          <strong>学習履歴はどこに保存されますか。</strong><br>
+          端末内にのみ保存され、外部に送信されることはありません。
+          詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。
+        </p>
+        <p>
+          <strong>機種変更で学習履歴を引き継げますか。</strong><br>
+          学習履歴は端末内にのみ保存する設計のため、引き継ぎ機能はありません。
+        </p>
+        <p>
+          <strong>内容に誤りを見つけた場合はどうすればよいですか。</strong><br>
+          上記のお問い合わせ先までご連絡ください。
+          アプリ名と該当箇所をお知らせいただけますと、確認と修正がスムーズです。
+        </p>
+      </div>
+    </article>
 
-<img src="assessment-navi-icon.png">
+    <div class="notice">
+      <strong>Educational Purpose</strong><br>
+      Taka Medical Apps が提供するアプリは、教育および学習支援を目的としています。
+      診断、治療、投薬、抗菌薬の選択、患者個別の医療判断を行うものではありません。
+      実際の診療・看護では、所属施設の方針、最新のガイドライン、添付文書、
+      地域の耐性状況、医師および医療専門職の判断を優先してください。
+    </div>
 
-<span>Taka Medical Apps</span>
-
-</a>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="apps.html">Apps</a>
-
-<a href="about.html">About</a>
-
-<a href="privacy.html">Privacy</a>
-
-</nav>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<h1>Support</h1>
-
-<p>
-
-Assessment Navi に関するお問い合わせやご意見はこちらからお願いいたします。
-
-</p>
-
-</section>
-
-<main>
-
-<div class="card">
-
-<h2>Contact</h2>
-
-<p>
-
-アプリに関するご質問・不具合報告・ご要望などがございましたら、お気軽にご連絡ください。
-
-</p>
-
-<a class="email" href="mailto:ttrs.5296@gmail.com">
-
-お問い合わせ
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>Supported App</h2>
-
-<p>
-
-Assessment Navi
-
-</p>
-
-<p>
-
-Version 1.0 and later
-
-</p>
-
-</div>
-
-<div class="notice">
-
-<strong>Educational Purpose</strong>
-
-<br><br>
-
-Assessment Navi は教育・学習支援を目的としたアプリです。
-
-診断、治療、投薬、患者個別の医療判断を目的とするものではありません。
-
-実際の診療では医療専門職の判断を優先してください。
-
-</div>
-
-</main>
-
-<footer>
-
-© 2026 Taka Medical Apps
-
-</footer>
-
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        © 2026 Taka Medical Apps. All rights reserved.
+      </div>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

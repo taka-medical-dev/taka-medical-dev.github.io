@@ -1,331 +1,856 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="ja">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Taka Medical Apps</title>
+  <meta name="description" content="Taka Medical Apps が提供するアプリのプライバシーポリシー。個人情報は収集しません。" />
+  <style>
 
-<meta charset="UTF-8">
+    * {
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      box-sizing: border-box;
 
-<title>Privacy Policy | Assessment Navi</title>
+    }
 
-<link rel="icon" href="assessment-navi-icon.png">
+    html {
 
-<link rel="apple-touch-icon" href="assessment-navi-icon.png">
+      scroll-behavior: smooth;
 
-<style>
+    }
 
-*{
+    body {
 
-box-sizing:border-box;
+      margin: 0;
 
-}
+      font-family:
 
-body{
+        -apple-system,
 
-margin:0;
+        BlinkMacSystemFont,
 
-font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+        "Helvetica Neue",
 
-background:#f5f7fb;
+        "Hiragino Kaku Gothic ProN",
 
-color:#111827;
+        "Yu Gothic",
 
-line-height:1.8;
+        Arial,
 
-}
+        sans-serif;
 
-header{
+      background: #f5f7fb;
 
-position:sticky;
+      color: #111827;
 
-top:0;
+      line-height: 1.8;
 
-background:rgba(255,255,255,.88);
+    }
 
-backdrop-filter:blur(18px);
+    header {
 
-border-bottom:1px solid #e5e7eb;
+      position: sticky;
 
-}
+      top: 0;
 
-.nav{
+      z-index: 10;
 
-max-width:1100px;
+      background: rgba(255, 255, 255, 0.92);
 
-margin:auto;
+      backdrop-filter: blur(18px);
 
-padding:15px 22px;
+      -webkit-backdrop-filter: blur(18px);
 
-display:flex;
+      border-bottom: 1px solid #e5e7eb;
 
-justify-content:space-between;
+    }
 
-align-items:center;
+    .nav {
 
-}
+      max-width: 1120px;
 
-.brand{
+      margin: 0 auto;
 
-display:flex;
+      padding: 14px 22px;
 
-align-items:center;
+      display: flex;
 
-gap:10px;
+      justify-content: space-between;
 
-font-weight:800;
+      align-items: center;
 
-text-decoration:none;
+      gap: 20px;
 
-color:#111827;
+    }
 
-}
+    .brand {
 
-.brand img{
+      color: #111827;
 
-width:34px;
+      font-weight: 800;
 
-height:34px;
+      text-decoration: none;
 
-border-radius:9px;
+      white-space: nowrap;
 
-}
+    }
 
-nav a{
+    .nav-links {
 
-margin-left:18px;
+      display: flex;
 
-text-decoration:none;
+      align-items: center;
 
-color:#111827;
+      flex-wrap: wrap;
 
-font-weight:600;
+      justify-content: flex-end;
 
-font-size:14px;
+    }
 
-}
+    .nav a {
 
-.hero{
+      color: #111827;
 
-padding:70px 20px;
+      text-decoration: none;
 
-background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      margin-left: 18px;
 
-color:white;
+      font-size: 14px;
 
-text-align:center;
+      font-weight: 600;
 
-}
+    }
 
-.hero h1{
+    .nav a:hover,
 
-margin:0;
+    .nav a:focus-visible {
 
-font-size:50px;
+      color: #2563eb;
 
-letter-spacing:-.04em;
+    }
 
-}
+    .hero {
 
-.hero p{
+      background:
 
-color:#dbeafe;
+        radial-gradient(
 
-margin-top:16px;
+          circle at 85% 20%,
 
-}
+          rgba(56, 189, 248, 0.24),
 
-main{
+          transparent 32%
 
-max-width:900px;
+        ),
 
-margin:auto;
+        linear-gradient(135deg, #0f172a, #1e3a8a);
 
-padding:60px 22px;
+      color: white;
 
-}
+      padding: 72px 22px;
 
-.card{
+    }
 
-background:white;
+    .hero-inner {
 
-padding:34px;
+      max-width: 1120px;
 
-border-radius:28px;
+      margin: 0 auto;
 
-margin-bottom:24px;
+    }
 
-box-shadow:0 20px 60px rgba(15,23,42,.08);
+    h1 {
 
-}
+      margin: 0 0 18px;
 
-h2{
+      font-size: clamp(34px, 6vw, 56px);
 
-margin-top:0;
+      line-height: 1.1;
 
-}
+      letter-spacing: -0.04em;
 
-p{
+    }
 
-color:#64748b;
+    .hero p {
 
-}
+      max-width: 760px;
 
-ul{
+      margin: 0;
 
-color:#64748b;
+      color: #dbeafe;
 
-}
+      font-size: 17px;
 
-footer{
+    }
 
-padding:34px;
+    main {
 
-border-top:1px solid #e5e7eb;
+      max-width: 1120px;
 
-text-align:center;
+      margin: 0 auto;
 
-font-size:13px;
+      padding: 56px 22px;
 
-color:#64748b;
+    }
 
-}
+    .section-heading {
 
-</style>
+      margin-bottom: 30px;
 
+    }
+
+    .section-heading h2 {
+
+      margin: 0 0 8px;
+
+      font-size: clamp(28px, 4vw, 38px);
+
+      letter-spacing: -0.03em;
+
+    }
+
+    .section-heading p {
+
+      max-width: 760px;
+
+      margin: 0;
+
+      color: #6b7280;
+
+    }
+
+    .app-card {
+
+      display: grid;
+
+      grid-template-columns: 120px 1fr;
+
+      gap: 26px;
+
+      margin-bottom: 28px;
+
+      padding: 28px;
+
+      background: white;
+
+      border: 1px solid #e5e7eb;
+
+      border-radius: 28px;
+
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
+
+    }
+
+    .app-card:target {
+
+      scroll-margin-top: 100px;
+
+    }
+
+    .app-icon {
+
+      width: 120px;
+
+      height: 120px;
+
+      border-radius: 28px;
+
+      object-fit: cover;
+
+      background: #eef2ff;
+
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.18);
+
+    }
+
+    .app-content {
+
+      min-width: 0;
+
+    }
+
+    .app-title-row {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-start;
+
+      gap: 18px;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 6px;
+
+    }
+
+    .app-title-row h2 {
+
+      margin: 0;
+
+      font-size: 30px;
+
+      line-height: 1.25;
+
+      letter-spacing: -0.03em;
+
+    }
+
+    h3 {
+
+      margin: 28px 0 10px;
+
+      font-size: 20px;
+
+    }
+
+    p {
+
+      margin: 0 0 14px;
+
+      color: #4b5563;
+
+    }
+
+    ul {
+
+      padding-left: 22px;
+
+      color: #4b5563;
+
+    }
+
+    li {
+
+      margin-bottom: 6px;
+
+    }
+
+    .labels {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-bottom: 12px;
+
+    }
+
+    .label {
+
+      display: inline-block;
+
+      padding: 5px 10px;
+
+      border-radius: 999px;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+    }
+
+    .label-featured {
+
+      background: #dbeafe;
+
+      color: #1e40af;
+
+    }
+
+    .label-review {
+
+      background: #ede9fe;
+
+      color: #5b21b6;
+
+    }
+
+    .label-education {
+
+      background: #dcfce7;
+
+      color: #166534;
+
+    }
+
+    .status {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 7px 12px;
+
+      border-radius: 999px;
+
+      background: #f3f4f6;
+
+      color: #374151;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      white-space: nowrap;
+
+    }
+
+    .status-dot {
+
+      width: 8px;
+
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #8b5cf6;
+
+    }
+
+    .button-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 18px;
+
+    }
+
+    .button {
+
+      display: inline-block;
+
+      padding: 12px 18px;
+
+      border-radius: 14px;
+
+      background: #2563eb;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      transition:
+
+        transform 0.2s ease,
+
+        background 0.2s ease;
+
+    }
+
+    .button:hover,
+
+    .button:focus-visible {
+
+      background: #1d4ed8;
+
+      transform: translateY(-1px);
+
+    }
+
+    .button-secondary {
+
+      background: #eef2ff;
+
+      color: #1e40af;
+
+    }
+
+    .button-secondary:hover,
+
+    .button-secondary:focus-visible {
+
+      background: #dbeafe;
+
+    }
+
+    .review-note {
+
+      margin-top: 18px;
+
+      padding: 16px 18px;
+
+      background: #f5f3ff;
+
+      border: 1px solid #ddd6fe;
+
+      border-radius: 16px;
+
+      color: #5b21b6;
+
+      font-size: 14px;
+
+    }
+
+    .notice {
+
+      margin-top: 34px;
+
+      padding: 22px;
+
+      background: #fff7ed;
+
+      border: 1px solid #fed7aa;
+
+      border-radius: 22px;
+
+      color: #7c2d12;
+
+      font-size: 14px;
+
+    }
+
+    .notice strong {
+
+      display: inline-block;
+
+      margin-bottom: 4px;
+
+    }
+
+    footer {
+
+      padding: 34px 22px;
+
+      border-top: 1px solid #e5e7eb;
+
+      color: #6b7280;
+
+      font-size: 13px;
+
+    }
+
+    .footer-inner {
+
+      max-width: 1120px;
+
+      margin: 0 auto;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 18px;
+
+      flex-wrap: wrap;
+
+    }
+
+    footer a {
+
+      margin-left: 14px;
+
+      color: #6b7280;
+
+      text-decoration: none;
+
+    }
+
+    footer a:hover,
+
+    footer a:focus-visible {
+
+      color: #2563eb;
+
+    }
+
+    @media (max-width: 760px) {
+
+      .nav {
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+      }
+
+      .nav-links {
+
+        justify-content: flex-end;
+
+      }
+
+      .nav a {
+
+        margin-left: 12px;
+
+        margin-bottom: 6px;
+
+      }
+
+      .hero {
+
+        padding: 58px 22px;
+
+      }
+
+      main {
+
+        padding-top: 42px;
+
+      }
+
+      .app-card {
+
+        grid-template-columns: 1fr;
+
+        padding: 22px;
+
+      }
+
+      .app-icon {
+
+        width: 96px;
+
+        height: 96px;
+
+        border-radius: 23px;
+
+      }
+
+      .app-title-row {
+
+        display: block;
+
+      }
+
+      .status {
+
+        margin-top: 12px;
+
+      }
+
+    }
+
+    @media (max-width: 520px) {
+
+      .nav {
+
+        display: block;
+
+      }
+
+      .nav-links {
+
+        justify-content: flex-start;
+
+        margin-top: 10px;
+
+      }
+
+      .nav a {
+
+        margin: 0 14px 6px 0;
+
+      }
+
+      .app-title-row h2 {
+
+        font-size: 26px;
+
+      }
+
+      .button {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+      footer a {
+
+        margin: 0 14px 0 0;
+
+      }
+
+    }
+
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<div class="nav">
-
-<a class="brand" href="index.html">
-
-<img src="assessment-navi-icon.png">
-
-<span>Taka Medical Apps</span>
-
-</a>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="apps.html">Apps</a>
-
-<a href="about.html">About</a>
-
-<a href="support.html">Support</a>
-
-</nav>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<h1>Privacy Policy</h1>
-
-<p>
-
-Last updated: July 2026
-
-</p>
-
-</section>
-
-<main>
-
-<div class="card">
-
-<h2>Overview</h2>
-
-<p>
-
-Assessment Navi is an educational application developed by Taka Medical Apps.
-
-The application is designed to support learning in physical assessment and clinical reasoning.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Information Collection</h2>
-
-<p>
-
-Assessment Navi does not collect, transmit, or share personal information.
-
-The application operates primarily offline and does not require user registration.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Third-Party Services</h2>
-
-<p>
-
-Assessment Navi does not use advertising networks or analytics services that collect personal information.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Children's Privacy</h2>
-
-<p>
-
-Assessment Navi is intended as an educational resource.
-
-No personal information is knowingly collected from children.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Contact</h2>
-
-<p>
-
-If you have questions regarding this Privacy Policy, please contact:
-
-</p>
-
-<p>
-
-<strong>Email:</strong>
-
-<a href="mailto:ttrs.5296@gmail.com">
-
-ttrs.5296@gmail.com
-
-</a>
-
-</p>
-
-</div>
-
-</main>
-
-<footer>
-
-© 2026 Taka Medical Apps
-
-</footer>
-
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">Taka Medical Apps</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Privacy Policy</h1>
+      <p>
+        Taka Medical Apps が提供するすべてのアプリに適用されるプライバシーポリシーです。私たちのアプリは個人情報を収集しません。
+      </p>
+    </div>
+  </section>
+  <main>
+    <div class="section-heading">
+      <h2>Privacy Policy</h2>
+      <p>
+        本プライバシーポリシーは、Taka Medical Apps が提供する
+        以下のすべてのアプリケーションに適用されます。
+      </p>
+    </div>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">対象アプリ</h3>
+      <ul>
+        <li>Assessment Navi</li>
+        <li>Antibiotic Atlas</li>
+        <li>周術期ナビ（Periop Navi）</li>
+      </ul>
+        <p>
+          最終更新日：2026年7月
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">1. 個人情報の収集について</h3>
+        <p>
+          Taka Medical Apps のアプリは、個人情報を収集、送信、共有しません。
+          氏名、メールアドレス、電話番号、住所、位置情報、端末識別子などの
+          個人を識別できる情報を取得することはありません。
+          利用者登録やアカウント作成も必要ありません。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">2. 端末内に保存される情報</h3>
+        <p>
+          学習の継続を支援するため、学習履歴を利用者の端末内にのみ保存します。
+          保存される項目はアプリにより異なりますが、いずれも閲覧状況やお気に入り、
+          学習結果といった学習に関する記録です。
+          これらの情報が外部のサーバーへ送信されることはありません。
+        </p>
+        <p>
+          たとえば周術期ナビ（Periop Navi）では、次の情報を端末内に保存します。
+        </p>
+        <ul>
+          <li>既読の節</li>
+          <li>しおり（節・用語カード）</li>
+          <li>確認問題で誤答した問題</li>
+          <li>症例の閲覧状況</li>
+          <li>アプリ内で入力した最近の検索語</li>
+        </ul>
+        <p>
+          アプリを端末から削除すると、保存された学習履歴もすべて削除されます。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">3. 通信について</h3>
+        <p>
+          周術期ナビ（Periop Navi）は完全にオフラインで動作し、
+          外部サーバーとの通信を行いません。
+          その他のアプリについても、学習内容の閲覧に必要な範囲を超えて
+          利用者の情報を送信することはありません。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">4. 第三者サービス</h3>
+        <p>
+          Taka Medical Apps のアプリは、個人情報を収集する広告ネットワーク、
+          アクセス解析サービス、第三者のソフトウェア開発キット（SDK）を使用しません。
+          利用者を追跡（トラッキング）することもありません。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">5. 第三者提供</h3>
+        <p>
+          収集する個人情報がないため、第三者への提供および販売は行いません。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">6. お子様のプライバシー</h3>
+        <p>
+          Taka Medical Apps のアプリは、看護学生および医療従事者を主な対象とした
+          教育・学習支援を目的としています。
+          お子様から個人情報を意図的に収集することはありません。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">7. 本ポリシーの変更</h3>
+        <p>
+          本プライバシーポリシーを変更する場合は、本ページに変更後の内容を掲載します。
+        </p>
+      </div>
+    </article>
+
+    <article class="app-card" style="grid-template-columns: 1fr;">
+      <div class="app-content">
+        <h3 style="margin-top:0;">8. お問い合わせ</h3>
+        <p>
+          本プライバシーポリシーに関するご質問は、下記までご連絡ください。
+        </p>
+        <div class="button-row">
+          <a class="button" href="mailto:ttrs.5296@gmail.com">
+            ttrs.5296@gmail.com
+          </a>
+          <a class="button button-secondary" href="support.html">
+            サポート
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <div class="notice">
+      <strong>Important Notice</strong><br>
+      Taka Medical Apps が提供するアプリは、教育および学習支援を目的としています。
+      診断、治療、投薬、抗菌薬の選択、患者個別の医療判断を行うものではありません。
+      実際の診療・看護では、所属施設の方針、最新のガイドライン、添付文書、
+      地域の耐性状況、医師および医療専門職の判断を優先してください。
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        © 2026 Taka Medical Apps. All rights reserved.
+      </div>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>
